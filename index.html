@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    } @font-face {
+        font-family: Candara;
+        src: url("Candara.ttf");
+    } h1 {
+        font: 80pt/1.4em DM Serif Text;
+        text-align: center;
+        margin: 24px 0;
+        text-shadow: 2px 1px 4px gray;
+        padding-top: 60px;
+        padding-bottom: 24px;
+    } #textbox {
+        width: 1700px;
+        height: 800px;
+        margin: 0 auto;
+        background: whitesmoke;
+        box-shadow: 2px 3px 6px gainsboro;
+        border: 1px solid gainsboro;
+        display: flex;
+        justify-content: center;
+    } figure {
+        margin: 50px;
+        padding-top: 30px;
+    } img, .zoom {
+        width: 400px;
+        height: 500px;
+        border: 1px solid gray;
+        box-shadow: 2px 3px 6px gray;
+        transition: transform 0.5s;
+    } figcaption {
+        font: 23pt/1.4em DM Sans;
+        margin-top: 10px;
+    } .zoom {
+        background: url("thumb-tulip.jpg");
+        background-size: 100%;
+        background-position: center;
+    } img:hover {
+       // filter: blur(2px);
+       // filter: opacity(0.50);
+       transform: scale(1.03);
+        transition: transform 0.5s;
+    } .zoom:hover {
+        background-size: 105%;
+        transition: background-size 0.5s;
+    }
+</style>
+</head>
+
+
+<body>
+    <h1>Portfolio</h1>
+    <div id="textbox">
+        <!-- Leaves photo -->
+        <figure>
+            <a href="Infographic Poster.jpg">
+            <img src="Infographic Poster.jpg" />
+            </a>
+            <figcaption>
+           Inforgraphic Poster
+            </figcaption>
+        </figure>
+         <figure>
+            <a href="6 Word Memoir Poster.jpg">
+            <img src="6 Word Memoir Poster.jpg" />
+            </a>
+            <figcaption>
+           6 Word Memoir Poster
+            </figcaption>
+        </figure>
+         <figure>
+            <a href="Magazine Redesign Cover.jpg">
+            <img src="Magazine Redesign Cover.jpg" />
+            </a>
+            <figcaption>
+           Magazine Cover Redesign
+            </figcaption>
+        </figure>
+    </div>
+</body>
+</html>
